@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header & Navbar */
+#header {
+  background: url("../img/black-and-white-dark-fiction-34084.jpg");
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+}
+
+#header-login {
+  background: url("../img/bright-bulb-close-up-1166643.jpg");
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+}
+
+#navbar {
+  position: fixed;
+  background: transparent;
+  transition: 0.8s;
+  z-index: 2;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#navbar-other {
+  position: fixed;
+  background: #424242;
+  transition: 0.8s;
+  z-index: 2;
+}
+
+#navbar-other .container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.navbar-part .brand-logo img {
+  padding: 0 1rem;
+}
+
+.header-content .py-2 {
+  padding-top: 8rem;
+  align-content: center;
+}
+
+section#services {
+  padding: 8rem 0;
+}
+
+#features img {
+  width: 15rem;
+}
+
+.input-field .btn {
+  width: 25rem;
+}
+
+#features-about .row {
+  padding: 5rem 0;
+}
+
+#article .row {
+  padding: 2rem 0;
+}
+
+.login-image {
+  background: url("../img/black-and-white-dark-fiction-34084.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.input-field .btn-login {
+  margin-left: 0.5rem;
+  width: 30rem;
+}
+
+.input-field {
+  margin-top: 1.5rem;
+}
+
+form#forget {
+  margin-top: 2rem;
+}
+
+a.blue-text.forget-pwd {
+  margin-left: 15rem;
+}
+
+/*Utility Class*/
+.tabs .indicator {
+  background-color: #1a237e;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: rgba(246, 178, 181, 0.2);
+  outline: none;
+}
+
+.input-field input[type="text"]:focus + label,
+.input-field input[type="email"]:focus + label,
+.input-field input[type="password"]:focus + label,
+.materialize-textarea:focus:not([readonly]) + label {
+  color: #005eed !important;
+}
+
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus,
+.input-field input[type="password"]:focus,
+.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #005eed !important;
+  box-shadow: 0 1px 0 0 #005eed !important;
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #005eed;
+  background-color: #005eed;
+  z-index: 0;
+}
+
+.material-icons.active {
+  color: #005eed !important;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.parallax-container {
+  height: 100vh;
+}
+
+.collection {
+  border: none;
+}
+
+@media screen and (max-width: 670px) {
+  #header {
+    min-height: 300px;
+  }
+
+  .navbar-part .brand-logo img {
+    padding: 0.8rem 1rem;
+  }
+
+  .parallax-container {
+    height: 20rem;
+  }
+}
